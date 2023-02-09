@@ -15,27 +15,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text("My first app"),),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.amber,
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.red,
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.blue,
-            )
-          ],
-        ),
+          appBar: AppBar(
+            title: Text("My first app"),
+          ),
+          body: Image(
+            image: NetworkImage("https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"),
+            Text: ("image photo")
+          )
       ),
     );
   }
